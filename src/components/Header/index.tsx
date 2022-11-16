@@ -1,24 +1,31 @@
 import React from 'react';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-import StorefrontIcon from '@mui/icons-material/Storefront';
 
 import {
   Container,
   FirstItem,
+  Icon,
   Items,
   Logo,
+  LogoTitle,
   Nav,
   Search,
-  SecondItem
+  SearchInput,
+  SecondItem,
+  StoreIcon
 } from './styles';
 
 export default function Header() {
   return (
     <Container>
       <Logo>
-        <StorefrontIcon />
+        <StoreIcon fontSize="large" />
+        <LogoTitle>eShop</LogoTitle>
       </Logo>
-      <Search></Search>
+      <Search>
+        <SearchInput type="text" />
+        <Icon />
+      </Search>
       <Nav>
         <Items>
           <FirstItem>Hello Guest</FirstItem>
