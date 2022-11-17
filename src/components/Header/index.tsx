@@ -1,13 +1,16 @@
 import React from 'react';
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
 import {
+  CartContainer,
+  CartCount,
+  CartIcon,
   Container,
   FirstItem,
   Icon,
   Items,
   Logo,
   LogoTitle,
+  Name,
   Nav,
   Search,
   SearchInput,
@@ -28,17 +31,17 @@ export default function Header() {
       </Search>
       <Nav>
         <Items>
-          <FirstItem>Hello Guest</FirstItem>
+          <Name>Hello Guest</Name>
           <SecondItem>Sign In</SecondItem>
         </Items>
         <Items>
           <FirstItem>Your</FirstItem>
           <SecondItem>Shop</SecondItem>
         </Items>
-        <Items>
-          <ShoppingCartIcon fontSize="large" />
-          <SecondItem>0</SecondItem>
-        </Items>
+        <CartContainer>
+          <CartIcon fontSize='large' />
+          <CartCount>0</CartCount>
+        </CartContainer>
       </Nav>
     </Container>
   );

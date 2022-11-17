@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import StorefrontIcon from '@mui/icons-material/Storefront';
 import SearchIcon from '@mui/icons-material/Search';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
 export const Container = styled.div`
   height: 4em;
@@ -61,6 +62,9 @@ export const Nav = styled.div`
 `;
 
 export const Items = styled.div`
+  font-family: 'Open Sans', sans-serif;
+  align-items: center;
+  justify-content: center;
   display: flex;
   flex-direction: column;
   margin-left: 0.5em;
@@ -68,11 +72,52 @@ export const Items = styled.div`
   color: white;
 `;
 
+export const Name = styled.span`
+  font-size: .7em;
+`;
+
 export const FirstItem = styled.span`
-  font-size: 0.5em;
+  font-size: 1em;
+  font-weight: 800;
 `;
 
 export const SecondItem = styled.span`
-  font-size: 0.7em;
+  font-size: 1em;
   font-weight: 800;
+`;
+
+export const CartContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const CartCount = styled.span`
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  text-align: center;
+  height: .8em;
+  width: .8em;
+  color: #000;
+  position: absolute;
+  right: 2em;
+  top: 1em;
+  background-color: #ff9f00;
+  padding: .2em;
+  border-radius: 50%;
+  z-index: 99;
+`;
+
+
+
+export const CartIcon = styled(ShoppingCartIcon)`
+  display: flex;
+  align-items: center;
+  color: white;
+  margin-left: .3em;
+  margin-right: 1.2em;
 `;
