@@ -3,21 +3,28 @@ import StarIcon from '@mui/icons-material/Star';
 
 export const Container = styled.div`
   display: flex;
+  width: 100%;
 `;
 
 export const ProductContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
   margin: .5em;
-  padding: 1em;
+  padding: 1em 2em;
   width: 100%;
   max-height: 25em;
   min-width: 8em;
   background-color: white;
   z-index: 1;
   font-family: 'open sans', sans-serif;
+  
+`;
+
+export const InfoContainer = styled.div`
+  display: flex;
+  flex-direction: column;
 `;
 
 export const Info = styled.div`
@@ -29,7 +36,9 @@ export const Info = styled.div`
   justify-content: center;
 `;
 
-export const Title = styled.p``;
+export const Title = styled.p`
+  line-height: 1.5em;
+`;
 
 export const Price = styled.p`
   margin-top: .5em;
@@ -37,6 +46,7 @@ export const Price = styled.p`
 
 export const Rating = styled.div`
   display: flex;
+  margin-top: .5em;
 `;
 
 export const Star = styled(StarIcon)`
